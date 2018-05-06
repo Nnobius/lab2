@@ -4,7 +4,7 @@
 typedef struct {
     int *begin;
     size_t capacity;
-    size_t used;
+    size_t size;
 } IntVector;
 
 IntVector *int_vector_new(size_t initial_capacity);

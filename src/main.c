@@ -15,9 +15,9 @@ int main ()
 
 	printf ("Testing vector set item:\n");
 
-	int_vector_set_item ( mass, 0, 7);
-	int_vector_set_item ( mass, 1, 15);
-	int_vector_set_item ( mass, 2, 1337);
+	int_vector_set_item ( mass, 0, 8);
+	int_vector_set_item ( mass, 1, 57);
+	int_vector_set_item ( mass, 2, 1646);
 	printf ("\nOther elements are empty\n");
 	vector_print ( mass );
 
@@ -56,10 +56,10 @@ int main ()
 
 	mass = int_vector_new ( 5 );
 
-	int_vector_set_item ( mass, 0, 13);
-	int_vector_set_item ( mass, 1, 666);
-	int_vector_set_item ( mass, 2, 1);
-	int_vector_set_item ( mass, 3, 337);
+	int_vector_set_item ( mass, 0, 17);
+	int_vector_set_item ( mass, 1, 369);
+	int_vector_set_item ( mass, 2, 4);
+	int_vector_set_item ( mass, 3, 146);
 
 	vector_print ( mass );
 	int_vector_pop_back ( mass );
@@ -83,13 +83,13 @@ int main ()
 
 	printf ("Testing int vector push back:\n");
 
-	printf ("\nSize: %lu\n", mass -> used);
+	printf ("\nSize: %lu\n", mass -> size);
 	printf ("Capacity: %lu\n", mass -> capacity);
 	
-	int_vector_push_back ( mass, 228);
+	int_vector_push_back ( mass, 1);
 	vector_print ( mass ); 
 	printf ("Capacity after vector push back: %lu\n", mass -> capacity);
-	printf ("Size after vector push back: %lu\n", mass -> used);
+	printf ("Size after vector push back: %lu\n", mass -> size);
 
 	printf ("---Int vector push back test complete\n\n");
 
